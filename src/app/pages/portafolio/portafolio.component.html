@@ -1,6 +1,6 @@
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
 <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-2">
-  <a *ngFor="let item of port.portfolio" href="portfolio-item.html" 
+  <span *ngFor="let item of port.portfolio" href="portfolio-item.html" 
   class="rk-item ae-masonry__item">
   <img src={{item.url}} alt="">
     <div class="item-meta">
@@ -8,7 +8,7 @@
         <p>{{item.categoria}}</p>
         <p>{{item.subtitulo}}</p>
     </div>
-  </a>
+  </span>
   </div>
 </section>
 
